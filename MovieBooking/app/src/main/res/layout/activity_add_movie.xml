@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Add A Movie"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:id="@+id/image"
+                android:src="@drawable/dummy"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <EditText
+                android:layout_marginTop="25dp"
+                android:id="@+id/editTextmovie"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Movie Name" />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextmovieprice"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Movie Ticket Price" />
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:entries="@array/movietime"
+                android:popupBackground="@color/white"
+                android:id="@+id/spinnerMovie"
+                android:theme="@style/mySpinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="" />
+
+            <View
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:hint="StartDate" />
+
+            <View
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editAvailable"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Available Sheets" />
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLight" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

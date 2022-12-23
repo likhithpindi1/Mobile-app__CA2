@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Admin Login"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Email : "
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/etEmail"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress|textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Password : "
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/etPass"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="  BACK  "
+                android:layout_weight="1"
+                android:id="@+id/btnBack"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="  Login  "
+                android:layout_weight="1"
+                android:id="@+id/btnLogin"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

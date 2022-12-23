@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="15dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:weightSum="2"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:src="@drawable/dummy"
+           android:layout_weight="1"
+           android:layout_width="250dp"
+           android:scaleType="fitXY"
+           android:id="@+id/image"
+           android:layout_height="match_parent"/>
+       <LinearLayout
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:text="Movie Name : "
+                   android:padding="5dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:text="Movie Name : "
+                   android:padding="5dp"
+                   android:id="@+id/Moviename"
+                   android:textStyle="normal"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:visibility="gone"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:text="Movie Price : "
+                   android:padding="5dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:text="Movie Name : "
+                   android:padding="5dp"
+                   android:id="@+id/MoviePrice"
+                   android:textStyle="normal"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:text="Movie Timing : "
+                   android:padding="5dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:text="Movie Name : "
+                   android:padding="5dp"
+                   android:id="@+id/Movietiming"
+                   android:textStyle="normal"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:text="Movie Date : "
+                   android:padding="5dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:text="Movie Name : "
+                   android:padding="5dp"
+                   android:id="@+id/Moviedate"
+                   android:textStyle="normal"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+           <LinearLayout
+           android:orientation="horizontal"
+           android:weightSum="2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:text="Available seats : "
+               android:padding="5dp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:text="Movie Name : "
+               android:padding="5dp"
+               android:id="@+id/available"
+               android:textStyle="normal"
+               android:textColor="@color/black"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+           <LinearLayout
+               android:orientation="horizontal"
+               android:id="@+id/linearCash"
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:text="Cash Booking/Cash Collection"
+                   android:padding="5dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:text=""
+                   android:padding="5dp"
+                   android:id="@+id/Moviecash"
+                   android:textStyle="normal"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_below="@+id/linearCash"
+               android:orientation="horizontal"
+               android:id="@+id/linearPay"
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:text="Online Booking/Online Collection"
+                   android:padding="5dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:text=""
+                   android:padding="5dp"
+                   android:id="@+id/Movieonline"
+                   android:textStyle="normal"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+
+
+           <Button
+           android:text="Book Now"
+           android:id="@+id/btn_book"
+           android:textStyle="bold"
+           android:textColor="@color/white"
+           android:backgroundTint="@color/black"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       </LinearLayout>
+   </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

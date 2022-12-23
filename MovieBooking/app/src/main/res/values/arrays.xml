@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movietime" >
+        <item>Morning</item>
+        <item>After Noon</item>
+        <item>Evening</item>
+        <item>Night</item>
+    </string-array>
+    <string-array name="price" >
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+    </string-array>
+</resources>

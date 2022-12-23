@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".Activity.BookedActivity">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Movie Name : "
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Movie Name : "
+                android:padding="5dp"
+                android:id="@+id/Moviename"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Ticket Price : "
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ticketPrice"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Select Seats : "
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/minusbtn"
+                    android:src="@drawable/ic_remove"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:textColorHint="#777"
+                    android:background="@color/white"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:id="@+id/seatsEt"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/addbtn"
+                    android:src="@drawable/ic_add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Email : "
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/etEmail"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress|textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Name : "
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/etName"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:inputType="text|textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="Book Now"
+            android:id="@+id/btn_book"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

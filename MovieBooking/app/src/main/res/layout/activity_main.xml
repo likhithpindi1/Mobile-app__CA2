@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:context=".Activity.MainActivity">
+
+
+        <TextView
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="StartDate"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_movie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/editTextDate"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+</layout>
